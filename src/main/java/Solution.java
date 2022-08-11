@@ -10,68 +10,66 @@ public class Solution {
         System.out.println("Hello " + name);
     }
 
-    void addNumbers() {
+    void addNumbers() throws RuntimeException {
         System.out.println("Add two numbers");
         System.out.println("Please enter the first number");
         Scanner inOne = new Scanner(System.in);
-        int a = 0, b = 0;
+        int a , b ;
 
         if (inOne.hasNextInt()) {
             a = inOne.nextInt();
         } else {
-            System.out.println("Please Input an integer!");
-            addNumbers();
+            throw new RuntimeException("Not a number");
         }
         System.out.println("Please enter the second number");
         if (inOne.hasNextInt()) {
             b = inOne.nextInt();
         } else {
-            System.out.println("Please Input an integer!");
-            addNumbers();
+            throw new RuntimeException("Not a number");
         }
         System.out.println("The sum is: " + (a + b));
     }
 
-    void divNumbers() {
+    void divNumbers() throws RuntimeException{
         System.out.println("Divide two numbers");
         System.out.println("Please enter the first number");
         Scanner inOne = new Scanner(System.in);
-        int a = 1, b = 1;
+        int a , b ;
 
         if (inOne.hasNextInt()) {
             a = inOne.nextInt();
         } else {
-            System.out.println("Please Input an integer!");
-            divNumbers();
+            throw new RuntimeException("Not a number");
         }
         System.out.println("Please enter the second number");
         if (inOne.hasNextInt()) {
             b = inOne.nextInt();
         } else {
-            System.out.println("Please Input an integer!");
-            divNumbers();
+            throw new RuntimeException("Not a number");
+        }
+        if(b == 0)
+        {
+            throw  new RuntimeException("Division by 0 is not allowed");
         }
         System.out.println("The result is: " + (a / b));
     }
 
-    void multNumbers() {
+    void multNumbers() throws RuntimeException{
         System.out.println("Multiply two numbers");
         System.out.println("Please enter the first number");
         Scanner inOne = new Scanner(System.in);
-        int a = 0, b = 0;
+        int a , b ;
 
         if (inOne.hasNextInt()) {
             a = inOne.nextInt();
         } else {
-            System.out.println("Please Input an integer!");
-            multNumbers();
+            throw new RuntimeException("Not a number");
         }
         System.out.println("Please enter the second number");
         if (inOne.hasNextInt()) {
             b = inOne.nextInt();
         } else {
-            System.out.println("Please Input an integer!");
-            multNumbers();
+            throw new RuntimeException("Not a number");
         }
         System.out.println("The result is: " + (a * b));
     }

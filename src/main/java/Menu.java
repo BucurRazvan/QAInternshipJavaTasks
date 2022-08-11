@@ -12,9 +12,37 @@ public class Menu {
             int option = in.nextInt();
             System.out.println(option);
             switch(option){
-                case 1: operations.addNumbers();
-                case 2: operations.divNumbers();
-                case 3: operations.multNumbers();
+                case 1: {
+                    try{
+                        operations.addNumbers();
+                    }
+                    catch (RuntimeException e){
+                        System.out.println(e.getMessage());
+                        operations.addNumbers();
+                    }
+                    break;
+
+                }
+                case 2: {try {
+                    operations.divNumbers();
+                }
+                catch (RuntimeException e){
+                    System.out.println(e.getMessage());
+                    operations.divNumbers();
+                }
+                break;
+
+                }
+                case 3: {
+                    try {
+                        operations.multNumbers();
+                    }
+                    catch (RuntimeException e){
+                        System.out.println(e.getMessage());
+                        operations.multNumbers();
+                    }
+                    break;
+                }
                 default:
                     System.out.println("Please choose one of the options");
             }
