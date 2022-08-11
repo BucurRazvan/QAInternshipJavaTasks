@@ -1,0 +1,161 @@
+Automation testing day 1 - Java Exercises
+
+
+1. Write a Java program to print 'Hello' on screen and then print your name on a separate line.
+
+Expected Output :
+Hello
+Your Name
+
+
+2. Write a Java program to print the sum of two numbers.
+
+Test Data:
+74 + 36
+
+Expected Output :
+110
+
+
+3. Write a Java program to divide two numbers and print on the screen.
+
+Test Data :
+50/3
+
+Expected Output :
+16
+
+
+4. Write a Java program to print the result of the following operations.
+
+Test Data:
+a. -5 + 8 * 6
+b. (55+9) % 9
+
+Expected Output :
+43
+1
+
+
+5. Write a Java program that displays the product of two numbers.
+
+Test Data:
+First number: 25
+Second number: 5
+
+Expected Output :
+25 x 5 = 125
+
+6. Write a Java program to print the sum(addition), multiply, subtract, divide and remainder of two numbers.
+
+Test Data:
+
+First number: 125
+Second number: 24
+
+Expected Output :
+125 + 24 = 149
+125 - 24 = 101
+125 x 24 = 3000
+125 / 24 = 5
+125 mod 24 = 5
+
+7. Write a Java program to swap two variables.
+
+Test Data:
+First variable: 5
+Second variable: 14
+
+Expected Output :
+First variable: 14
+Second variable: 5
+
+8. Write a Java program to compare two numbers.
+Input Data:
+First integer: 25
+Second integer: 39
+
+Expected Output
+25 != 39
+25 < 39
+25 <= 39
+
+9. Write a Java program to reverse a string.
+Input Data:
+String: The quick brown fox
+Expected Output
+Reverse string: xof nworb kciuq ehT
+
+10. Write a Java program to count the letters, spaces, numbers and other characters of an input string.
+Expected Output
+The string is :  Aa kiu, I swd skieo 236587. GH kiu: sieo?? 25.33
+letter: 23
+space: 9
+number: 10
+other: 6
+
+11. Write a Java program to get a number from the user and print whether it is positive or negative.
+Test Data
+Input number: 35
+Expected Output :
+Number is positive
+12. Write a program in Java to display the first 10 natural numbers.
+Expected Output :
+The first 10 natural numbers are:
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+13. Write a program in Java to display n terms of natural numbers and their sum.
+Test Data
+Input the number: 2
+Expected Output :
+Input number:
+2
+The first n natural numbers are :
+1
+2
+The Sum of Natural Number upto n terms :
+3
+
+
+14. Write a Java program that reads an integer and check whether it is negative, zero, or positive.
+Test Data
+Input a number: 7
+Expected Output :
+Number is positive
+
+15. Write a Java program that reads a positive integer and count the number of digits the number has.
+Test Data
+Input an integer number: 125463
+Expected Output :
+Number of digits in the number: 6
+
+15. Write a Java program to sum values of an array.
+
+16. Write a Java program to print the following grid.
+Expected Output :
+- - - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - -
+
+
+16. Write a Java program to calculate the average value of array elements.
+17. Write a Java program to test if an array contains a specific value.
+18. Write a Java program to find the index of an array element.
+
