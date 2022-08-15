@@ -1,4 +1,5 @@
 import java.sql.SQLOutput;
+import java.util.ArrayList;
 import java.util.Optional;
 import java.util.Scanner;
 import java.util.regex.Matcher;
@@ -129,5 +130,64 @@ public class Operations {
         }
         System.out.println("Sum of first "+a+" numbers is: " +sum);
 
+    }
+    void compareNr(Integer a, Integer b){
+        if(a==null) {
+            a=Validations.ValidateInt();
+        }
+        if(b==null) {
+            b=Validations.ValidateInt();
+        }
+        switch (Integer.compare(a,b)){
+            case 0 -> System.out.println("The numbers are equal");
+            case 1 -> System.out.println(a+" is greater than "+b);
+            case -1 -> System.out.println(b+" is greater than "+a);
+        }
+
+    }
+    void countDigits(){
+       Integer a= Validations.ValidateIntGreaterThanZero();
+       Integer b=a;
+       Integer counter=0;
+       while (b>0){
+           b/=10;
+           counter++;
+       }
+        System.out.println(a+" has "+ counter+" digits.");
+
+    }
+    void addArray(){
+        ArrayList<Integer> array = Validations.buildArray();
+        Integer sum=0;
+        for (Integer i:array) {
+            sum+=i;
+        }
+        System.out.println("The sum of the array is: "+sum);
+    }
+    void arrayAVGVal(){
+        ArrayList<Integer> array = Validations.buildArray();
+        Integer sum=0;
+        for (Integer i:array) {
+            sum+=i;
+        }
+        System.out.println("The average is: "+sum/array.size());
+    }
+    void arrayContains(){
+        ArrayList<Integer> array = Validations.buildArray();
+        System.out.println("Input the number you wish to search for");
+        Integer nr = Validations.ValidateInt();
+        if(array.contains(nr))
+            System.out.println(nr + "is present at position " + array.indexOf(nr));
+        else
+            System.out.println("Number is not present in the array");
+
+    }
+    void printGrid(){
+       for(int i=0;i<10;i++){
+           for(int j=0;j<10;j++){
+               System.out.print("Grid ");
+           }
+           System.out.println("");
+       }
     }
 }
